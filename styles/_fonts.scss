@@ -1,43 +1,63 @@
 @font-face {
-    font-family: 'Gilroy';
-    src: url(../public/fonts/Gilroy/Regular/Gilroy-Regular.woff) format('woff'),
-        url(../public/fonts/Gilroy/Regular/Gilroy-Regular.woff2) format('woff2');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Gilroy';
+  src: url(../public/fonts/Gilroy/Medium/Gilroy-Medium.woff) format('woff'),
+      url(../public/fonts/Gilroy/Medium/Gilroy-Medium.woff2) format('woff2');
+  font-weight: 500;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Gilroy';
-    src: url(../public/fonts/Gilroy/Medium/Gilroy-Medium.woff) format('woff'),
-        url(../public/fonts/Gilroy/Medium/Gilroy-Medium.woff2) format('woff2');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'Gilroy';
+  src: url(../public/fonts/Gilroy/SemiBold/Gilroy-SemiBold.woff) format('woff'),
+      url(../public/fonts/Gilroy/SemiBold/Gilroy-SemiBold.woff2) format('woff2');
+  font-weight: 600;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Gilroy';
-    src: url(../public/fonts/Gilroy/SemiBold/Gilroy-SemiBold.woff) format('woff'),
-        url(../public/fonts/Gilroy/SemiBold/Gilroy-SemiBold.woff2) format('woff2');
-    font-weight: 600;
-    font-style: normal;
+  font-family: 'Gilroy';
+  src: url(../public/fonts/Gilroy/Bold/Gilroy-Bold.woff) format('woff'),
+      url(../public/fonts/Gilroy/Bold/Gilroy-Bold.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Gilroy';
-    src: url(../public/fonts/Gilroy/Bold/Gilroy-Bold.woff) format('woff'),
-        url(../public/fonts/Gilroy/Bold/Gilroy-Bold.woff2) format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Nunito-Sans';
-    src: url(../public/fonts/Nunito-Sans/Regular/NunitoSans-Regular.woff) format('woff'),
-        url(../public/fonts/Nunito-Sans/Regular/NunitoSans-Regular.woff2) format('woff2');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'Nunito-Sans';
+  src: url(../public/fonts/Nunito-Sans/Light/NunitoSans-Light.woff) format('woff'),
+      url(../public/fonts/Nunito-Sans/Light/NunitoSans-Light.woff2) format('woff2');
+  font-weight: 300;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Nunito-Sans';
-    src: url(../public/fonts/Nunito-Sans/Italic/NunitoSans-Italic.woff) format('woff'),
-        url(../public/fonts/Nunito-Sans/Italic/NunitoSans-Italic.woff2) format('woff2');
-    font-weight: 500;
-    font-style: italic;
+  font-family: 'Nunito-Sans';
+  src: url(../public/fonts/Nunito-Sans/Light-Italic/NunitoSans-LightItalic.woff) format('woff'),
+      url(../public/fonts/Nunito-Sans/Light-Italic/NunitoSans-LightItalic.woff2) format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Nunito-Sans';
+  src: url(../public/fonts/Nunito-Sans/Regular/NunitoSans-Regular.woff) format('woff'),
+      url(../public/fonts/Nunito-Sans/Regular/NunitoSans-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito-Sans';
+  src: url(../public/fonts/Nunito-Sans/Italic/NunitoSans-Italic.woff) format('woff'),
+      url(../public/fonts/Nunito-Sans/Italic/NunitoSans-Italic.woff2) format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Nunito-Sans';
+  src: url(../public/fonts/Nunito-Sans/SemiBold/NunitoSans-SemiBold.woff) format('woff'),
+      url(../public/fonts/Nunito-Sans/SemiBold/NunitoSans-SemiBold.woff2) format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito-Sans';
+  src: url(../public/fonts/Nunito-Sans/SemiBold-Italic/NunitoSans-SemiBoldItalic.woff) format('woff'),
+      url(../public/fonts/Nunito-Sans/SemiBold-Italic/NunitoSans-SemiBoldItalic.woff2) format('woff2');
+  font-weight: 600;
+  font-style: italic;
 }

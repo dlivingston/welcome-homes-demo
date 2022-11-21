@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
+import IconArrowForward from '../components/IconArrowForward/IconArrowForward'
 
 export default function Home() {
   return (
@@ -14,14 +15,14 @@ export default function Home() {
       <main>
         <section className={`section ${styles.hero}`}>
           <div className="container">
-            <h1>We make building a new home possible</h1>
+            <h1 className="display-1">We make building a new home possible</h1>
             <p>A new home is so much better than a used one- Welcome makes the process of building a home super-simple. We handle everything at a guaranteed all-in price.</p>
           </div>
         </section>
         <section className={`section theme-dark ${styles.how}`}>
           <div className="container">
-            <h2>How it works</h2>
-            <div className={styles.howFlex}>
+            <h2 className="display-2">How it works</h2>
+            <div className={styles.grid}>
               <div>
                 <div className={styles.icon}>
                   <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24">
@@ -53,21 +54,39 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="section">
+        <section className={`section ${styles.where}`}>
           <div className="container">
-            <h2>Live where you want to live</h2>
-            <p>We currently service the Greater Metro areas of New York City, Washington D.C. & Philadelphia. <br /> Check back as we add more regions throughout the country</p>
+            <div className="section-head">
+              <h2 className="display-2">Live where you want to live</h2>
+              <p>We currently service the Greater Metro areas of New York City, Washington D.C. & Philadelphia. <br /> Check back as we add more regions throughout the country</p>
+            </div>
           </div>
         </section>
-        <section className="section">
+        <section className={`section ${styles.models}`}>
           <div className="container">
-            <h2>Our models</h2>
-            <p>Compare our models to find the perfect home for you, customized to your liking.</p>
+            <div className="section-head">
+              <h2 className="display-2">Our models</h2>
+              <p>Compare our models to find the perfect home for you, customized to your liking.</p>
+            </div>
           </div>
         </section>
-        <section className="section">
+        <section className={`section ${styles.information}`}>
           <div className="container">
-            <h2>Browse more information</h2>
+            <div className={styles.flex}>
+              <div className={styles.imgWrapper}>
+                <Image src="/images/more-info.jpg" alt="" fill />
+              </div>
+              <div className={styles.listWrapper}>
+                <h2 className="display-2">Browse more information</h2>
+                <ul className={styles.linkList}>
+                  <li><a href="#">Frequently asked questions <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
+                  <li><a href="#">How it works <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
+                  <li><a href="#">Learn more about our models <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
+                  <li><a href="#">Check out our land inventory <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
+                  <li><a href="#">Check out our blog <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
       </main>
