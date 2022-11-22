@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
+import HeroCarousel from '../components/HeroCarousel/HeroCarousel'
 import IconArrowForward from '../components/IconArrowForward/IconArrowForward'
 
 export default function Home() {
@@ -15,8 +16,17 @@ export default function Home() {
       <main>
         <section className={`section ${styles.hero}`}>
           <div className="container">
-            <h1 className="display-1">We make building a new home possible</h1>
-            <p>A new home is so much better than a used one- Welcome makes the process of building a home super-simple. We handle everything at a guaranteed all-in price.</p>
+            <div className={styles.flex}>
+              <div className={styles.titleWrapper}>
+                <h1 className="display-1">We make building a new home possible</h1>
+                <p>A new home is so much better than a used one- Welcome makes the process of building a home super-simple. We handle everything at a guaranteed all-in price.</p>
+                <a href="#" className="btn-link">Our models</a>
+                <a href="#" className="btn-outline-link">Explore towns</a>
+              </div>
+              <div className={styles.carouselWrapper}>
+                <HeroCarousel/>
+              </div>
+            </div>
           </div>
         </section>
         <section className={`section theme-dark ${styles.how}`}>

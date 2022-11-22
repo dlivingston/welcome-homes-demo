@@ -4,6 +4,27 @@
   p {
     font-size: 1.375rem;
   }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 900px) {
+      flex-direction: row;
+      justify-content: space-between;
+      .titleWrapper {
+        flex: 1 1 30%;
+        margin-right: 2rem;
+      }
+      .carouselWrapper {
+        flex: 1 1 70%;
+        max-width: 700px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .titleWrapper {
+        margin-right: 6vw;
+      }
+    }
+  }
 }
 .how {
   padding-top: 4rem;
