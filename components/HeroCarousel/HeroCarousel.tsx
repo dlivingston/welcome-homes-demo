@@ -40,7 +40,7 @@ export default function HeroCarousel() {
       {slides.map((slide, index) => {
         return (
           <div key={index} className={`${styles.slideWrapper} ${activeSlide === index ? `${styles.current}` : ''}`}>
-            <Image src={slide} alt="" fill />
+            <Image src={slide} alt="" fill sizes="(max-width: 700px) 100vw, 700px" />
           </div>
         )
       })}

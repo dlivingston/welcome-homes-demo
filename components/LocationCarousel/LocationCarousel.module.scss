@@ -1,0 +1,119 @@
+.viewport {
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);
+    width: 2rem;
+    z-index: 10;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);
+    width: 2rem;
+    z-index: 10;
+  }
+}
+.slide-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
+  
+  
+}
+.slide {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 410px;
+  background-color: var(--white);
+  margin: 8px;
+  position: relative;
+  transform: scale(1);
+  transition: transform ease-in-out 0.3s;
+  z-index: 2;
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    height: 225px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &::after {
+    content: '';
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  &:hover {
+    transform: scale(1.05);
+    z-index: 11;
+    &::after {
+      opacity: 1;
+      z-index: 10;
+    }
+  }
+}
+.nav-container {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  .btnPrev, .btnNext {
+    width: 48px;
+    height: 48px;
+    z-index: 20;
+    top: calc(50% - 24px);
+    border: 2px solid var(--med-gray);
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transform: scale(1);
+    transition: transform ease-in-out 0.2s;
+    svg {
+      width: 2rem;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+    @media (min-width: 900px) {
+      width: 64px;
+      height: 64px;
+      svg {
+        width: 2.5rem;
+      }
+    }
+  }
+
+}

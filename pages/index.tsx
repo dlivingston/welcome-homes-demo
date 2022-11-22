@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import HeroCarousel from '../components/HeroCarousel/HeroCarousel'
 import IconArrowForward from '../components/IconArrowForward/IconArrowForward'
+import LocationCarousel from '../components/LocationCarousel/LocationCarousel'
 
 export default function Home() {
   return (
@@ -65,10 +66,13 @@ export default function Home() {
           </div>
         </section>
         <section className={`section ${styles.where}`}>
-          <div className="container">
+          <div className={styles.container}>
             <div className="section-head">
               <h2 className="display-2">Live where you want to live</h2>
               <p>We currently service the Greater Metro areas of New York City, Washington D.C. & Philadelphia. <br /> Check back as we add more regions throughout the country</p>
+            </div>
+            <div className={styles.carouselWrapper}>
+              <LocationCarousel/>
             </div>
           </div>
         </section>
