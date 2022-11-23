@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.scss'
 import HeroCarousel from '../components/HeroCarousel/HeroCarousel'
 import IconArrowForward from '../components/IconArrowForward/IconArrowForward'
 import LocationCarousel from '../components/LocationCarousel/LocationCarousel'
+import ModelTabs from '../components/ModelTabs/ModelTabs'
 
 export default function Home() {
   return (
@@ -84,6 +85,7 @@ export default function Home() {
               <h2 className="display-2">Our models</h2>
               <p>Compare our models to find the perfect home for you, customized to your liking.</p>
             </div>
+            <ModelTabs/>
           </div>
         </section>
         <section className={`section ${styles.information}`}>
