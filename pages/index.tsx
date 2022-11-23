@@ -21,8 +21,10 @@ export default function Home() {
               <div className={styles.titleWrapper}>
                 <h1 className="display-1">We make building a new home possible</h1>
                 <p>A new home is so much better than a used one- Welcome makes the process of building a home super-simple. We handle everything at a guaranteed all-in price.</p>
-                <a href="#" className="btn-link">Our models</a>
-                <a href="#" className="btn-outline-link">Explore towns</a>
+                <div className={styles["btn-row"]}>
+                  <a href="#" className="btn-link">Our models</a>
+                  <a href="#" className="btn-outline-link">Explore towns</a>
+                </div>
               </div>
               <div className={styles.carouselWrapper}>
                 <HeroCarousel/>
@@ -67,7 +69,7 @@ export default function Home() {
         </section>
         <section className={`section ${styles.where}`}>
           <div className={styles.container}>
-            <div className="section-head">
+            <div className={styles["section-head"]}>
               <h2 className="display-2">Live where you want to live</h2>
               <p>We currently service the Greater Metro areas of New York City, Washington D.C. & Philadelphia. <br /> Check back as we add more regions throughout the country</p>
             </div>

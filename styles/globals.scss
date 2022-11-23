@@ -58,3 +58,31 @@ a {
     background-color: var(--black);
   }
 }
+.btn-link, .btn-outline-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 180px;
+  height: 54px;
+  border: 2px solid;
+}
+.btn-link {
+  background-color: var(--cornflower-blue);
+  color: var(--white);
+  border-color: var(--cornflower-blue);
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+.btn-outline-link {
+  background-color: var(--white);
+  color: var(--cornflower-blue);
+  border-color: var(--cornflower-blue);
+  &:hover {
+    background-color: var(--cornflower-blue);
+    color: var(--white);
+  }
+}
