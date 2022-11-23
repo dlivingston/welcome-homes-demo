@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 import HeroCarousel from '../components/HeroCarousel/HeroCarousel'
 import IconArrowForward from '../components/IconArrowForward/IconArrowForward'
@@ -97,11 +98,11 @@ export default function Home() {
               <div className={styles.listWrapper}>
                 <h2 className="display-2">Browse more information</h2>
                 <ul className={styles.linkList}>
-                  <li><a href="/about">Frequently asked questions <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
-                  <li><a href="/about">How it works <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
-                  <li><a href="/about">Learn more about our models <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
-                  <li><a href="/about">Check out our land inventory <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
-                  <li><a href="/about">Check out our blog <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
+                  <li><Link href="/about">Frequently asked questions <span className={styles.iconWrapper}><IconArrowForward/></span></Link></li>
+                  <li><Link href="/about">How it works <span className={styles.iconWrapper}><IconArrowForward/></span></Link></li>
+                  <li><Link href="/about">Learn more about our models <span className={styles.iconWrapper}><IconArrowForward/></span></Link></li>
+                  <li><Link href="/about">Check out our land inventory <span className={styles.iconWrapper}><IconArrowForward/></span></Link></li>
+                  <li><Link href="/about">Check out our blog <span className={styles.iconWrapper}><IconArrowForward/></span></Link></li>
                 </ul>
               </div>
             </div>
