@@ -97,11 +97,11 @@ export default function Home() {
               <div className={styles.listWrapper}>
                 <h2 className="display-2">Browse more information</h2>
                 <ul className={styles.linkList}>
-                  <li><a href="#">Frequently asked questions <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
-                  <li><a href="#">How it works <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
-                  <li><a href="#">Learn more about our models <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
-                  <li><a href="#">Check out our land inventory <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
-                  <li><a href="#">Check out our blog <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
+                  <li><a href="/about">Frequently asked questions <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
+                  <li><a href="/about">How it works <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
+                  <li><a href="/about">Learn more about our models <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
+                  <li><a href="/about">Check out our land inventory <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
+                  <li><a href="/about">Check out our blog <span className={styles.iconWrapper}><IconArrowForward/></span></a></li>
                 </ul>
               </div>
             </div>
