@@ -17,6 +17,8 @@
     transition: opacity ease-in-out 0.5s;
     opacity: 0;
     z-index: 1;
+    border-radius: 40px;
+    overflow: hidden;
     &.current {
       z-index: 10;
       opacity: 1;
